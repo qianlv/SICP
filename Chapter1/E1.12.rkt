@@ -24,3 +24,8 @@
 (pascal-triangle 4 2)
 (pascal-triangle 4 3)
 (pascal-triangle 4 4)
+
+; 迭代版本, 参考: https://sicp.readthedocs.io/en/latest/chp1/12.html
+; 直接用公式
+
+; 或是通过记忆化, 提高效率, 减少重复
