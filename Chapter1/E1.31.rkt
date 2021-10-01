@@ -28,15 +28,16 @@
   (iter a 1.0))
 
 (define (square x) (* x x))
+
+; pi / 4
 (define (factorial n)
   (define (next x)
     (+ x 2))
-  (define (term x)   
-    ; (display (/ (+ x 1) x))
-    ; (newline)
+  (define (term x)
     (square (/ (+ x 1) x)))
   (define b (+ 3 (* 2 (- n 1))))
   ; (* (/ 2 (next b)) (product-rec term 3 next b)))
   (* (/ 2 (next b)) (product-iter term 3 next b)))
 
+; pi
 (* 4 (factorial 10000))
