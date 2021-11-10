@@ -6,10 +6,12 @@
 ; (25 16 9 4 1)
 
 (define (reverse lst)
-  (if (null? lst)
-    '()
-    (append
-      (reverse (cdr lst))
-      (list (car lst)))))
+  (define (iter items answer)
+    (if (null? items)
+      answer
+      (iter (cdr items)
+            (cons (car items)
+                  answer))))
+  (iter lst nil))
 
 (reverse (list 1 4 9 16 25))

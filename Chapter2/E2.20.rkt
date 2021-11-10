@@ -1,6 +1,6 @@
 #lang sicp
 
-; e procedures +, *, and list take arbitrary
+; The procedures +, *, and list take arbitrary
 ; numbers of arguments. One way to define such procedures
 ; is to use define with doed-tail notation. In a procedure
 ; definition, a parameter list that has a dot before the last pa-
