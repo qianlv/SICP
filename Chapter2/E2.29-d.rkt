@@ -1,4 +1,5 @@
 #lang sicp
+
 ; d. Suppose we change the representation of mobiles so that the constructors are
 
 (define (make-mobile left right) (cons left right))
